@@ -1,5 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/*
+
+Main blue : #0065FC
+Main blue (light) : #DEEBFF
+Background: #F2F2F2
+*/
+
 body {
     font-family: 'Raleway';
+    margin: 0;
+}
+
+
+.accommodation, .popular-accommodation {
+    background-color: grey;
+}
+
+.accommodation {
+    display: flex;
+}
+
+.popular-accommodation {
+   
+}
+
+.accommodation-informations {
+    
+}
+
+.cards {
+    display: flex---;
+    flex-direction: row;
+}
+
+.card {
+    width: auto;
+    background-color: #fff;
+    border-radius: 10%;
+    margin: 30px;
+}
+
+.card img {
+    width: 400px;
+    margin: 10px;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    background-size: contain;
+}
+
+.rating .fa-star {
+    color: #0065FC;
+}
+
+footer {
+    background-color: #F2F2F2;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.footer-link {
+    text-decoration-line: none;
+    color: #000;
+}
+
+.container-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-part {
+    margin-left: 50px;
+    margin-right: 200px;
 }
