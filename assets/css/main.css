@@ -12,33 +12,116 @@ body {
     margin: 0;
 }
 
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
+.most-popular {
+    float: right;
+}
+
+nav {
+    height: 100px;
+}
+
+.filter {
+    padding: 10px;
+    /* 
+    border: 2px solid #D9D9D9;
+    border-radius: 30%;
+    */
+    font-weight: 900;
+}
+
+.filter-icon {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    color: #0065FC
+}
+
+.accommodation-number {
+    color: #0065FC;
+}
+
+.informations {
+    margin: 50px 0px 50px 0px;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.navbar-links {
+    float: right;
+}
+
+.navbar-links li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.active {
+    border-top: 3px solid #0065FC;
+}
+
+.navbar-links li a {
+    color: #0065FC;
+    text-decoration-line: none;
+}
+
+.navbar-links li .signup {
+    font-weight: 700;
+}
 .accommodation, .popular-accommodation {
-    background-color: grey;
+    background-color: #D9D9D9;
+    border-radius: 5%;
+    padding: 30px;
 }
 
 .accommodation {
-    display: flex;
+    width: 70%;
+    margin-bottom: 100px;
 }
 
 .popular-accommodation {
-   
+    width: 30%;
 }
 
-.accommodation-informations {
-    
+.container-accommodation {
+    display: flex;
 }
 
-.cards {
-    display: flex---;
+.popular-accommodation .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.accommodation .cards {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
     width: auto;
+    height: max-content;
     background-color: #fff;
     border-radius: 10%;
     margin: 30px;
+}
+
+.card-informations {
+    padding: 0px 0px 30px 30px;
 }
 
 .card img {
@@ -50,8 +133,14 @@ body {
 }
 
 .rating .fa-star {
+    color: #d9d9d9;
+}
+
+.rating .obtained {
     color: #0065FC;
 }
+
+
 
 footer {
     background-color: #F2F2F2;
@@ -60,6 +149,7 @@ footer {
     left: 0;
     width: 100%;
     height: auto;
+    padding-bottom: 50px;
 }
 
 .footer-link {
@@ -75,9 +165,9 @@ footer {
 .container-footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-.footer-part {
-    margin-left: 50px;
-    margin-right: 200px;
+.container-links a {
+    margin-bottom: 10px;
 }
