@@ -86,7 +86,7 @@ nav {
 }
 
 .accommodation {
-    width: 70%;
+    width: auto;
     margin-bottom: 100px;
 }
 
@@ -96,6 +96,7 @@ nav {
 
 .container-accommodation {
     display: flex;
+    flex-flow: row nowrap;
 }
 
 .most-popular {
@@ -135,6 +136,7 @@ nav {
 
 .card img {
     width: 400px;
+    max-height: 200px;
     margin: 10px;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
