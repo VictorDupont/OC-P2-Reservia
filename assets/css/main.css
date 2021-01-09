@@ -77,11 +77,8 @@ nav {
 
 /* Sections */
 
-.accommodation,
-.popular-accommodation {
-	background-color: #d9d9d9;
-	border-radius: 5%;
-	padding: 30px;
+.container-accommodation {
+	display: flex;
 }
 
 .accommodation {
@@ -89,17 +86,19 @@ nav {
 	height: 626px;
 	background-color: #efefef;
 	display: flex;
-	justify-content: space-around;
 	flex-flow: wrap;
+	margin: 0px;
 }
 
 .popular-accommodation {
-	width: 30%;
+	width: 487px;
+	height: 626px;
+	margin: 0px;
 }
 
 .container-accommodation {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-direction: row;
 }
 
 .most-popular {
@@ -128,6 +127,7 @@ nav {
 	width: 246px;
 	height: 200px;
 	padding-top: 5px;
+	margin-bottom: 50px;
 	border-radius: 20px;
 	background-color: white;
 }
@@ -151,6 +151,10 @@ nav {
 	border-radius: 20px 20px 0px 0px;
 	display: block;
 	margin: auto;
+}
+
+.rating {
+	margin-top: -5px;
 }
 
 .rating .fa-star {
