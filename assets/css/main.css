@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /*
 Main blue : #0065FC
@@ -7,179 +7,188 @@ Background: #F2F2F2
 */
 
 body {
-    font-family: 'Raleway';
-    margin: 0;
+	font-family: "Raleway";
+	margin: 0;
 }
 
 .container {
-    margin-left: 50px;
-    margin-right: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
-
 
 /* Navbar */
 
 nav {
-    height: 100px;
+	height: 100px;
 }
 
 .logo {
-    margin-left: 50px;
-    margin-top: 30px;
+	margin-left: 50px;
+	margin-top: 30px;
 }
 
 .navbar-links {
-    float: right;
+	float: right;
 }
 
 .navbar-links li {
-    display: inline-block;
-    padding: 30px;
+	display: inline-block;
+	padding: 30px;
 }
 
 .active {
-    border-top: 3px solid #0065FC;
+	border-top: 3px solid #0065fc;
 }
 
 .navbar-links li a {
-    color: #0065FC;
-    text-decoration-line: none;
+	color: #0065fc;
+	text-decoration-line: none;
 }
 
 .navbar-links li .signup {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 /* Filters */
 
 .filter {
-    padding: 10px;
-    /* 
+	padding: 10px;
+	/* 
     border: 2px solid #D9D9D9;
     border-radius: 30%;
     */
-    font-weight: 900;
+	font-weight: 900;
 }
 
 .filter-icon {
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #DEEBFF;
-    color: #0065FC
+	padding: 10px;
+	border-radius: 50%;
+	background-color: #deebff;
+	color: #0065fc;
 }
 
 .accommodation-number {
-    color: #0065FC;
+	color: #0065fc;
 }
 
 .informations {
-    margin: 50px 0px 50px 0px;
+	margin: 50px 0px 50px 0px;
 }
-
 
 /* Sections */
 
-.accommodation, .popular-accommodation {
-    background-color: #D9D9D9;
-    border-radius: 5%;
-    padding: 30px;
+.accommodation,
+.popular-accommodation {
+	background-color: #d9d9d9;
+	border-radius: 5%;
+	padding: 30px;
 }
 
 .accommodation {
-    width: auto;
-    margin-bottom: 100px;
+	width: 880px;
+	height: 626px;
+	background-color: #efefef;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
 }
 
 .popular-accommodation {
-    width: 30%;
+	width: 30%;
 }
 
 .container-accommodation {
-    display: flex;
-    flex-flow: row nowrap;
+	display: flex;
+	flex-flow: row nowrap;
 }
 
 .most-popular {
-    float: right;
+	float: right;
 }
-
 
 /* Cards */
 
 .popular-accommodation .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 .accommodation .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 .card {
-    width: auto;
-    height: max-content;
-    background-color: #fff;
-    border-radius: 10%;
-    margin: 30px;
+	width: 246px;
+	height: 200px;
+	padding-top: 5px;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.card-informations h1 {
+	font-size: 14px;
+}
+
+.card-informations p {
+	font-size: 12px;
 }
 
 .card-informations {
-    padding: 0px 0px 30px 30px;
+	margin-left: 17px;
 }
 
 .card img {
-    width: 400px;
-    max-height: 200px;
-    margin: 10px;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    background-size: contain;
+	width: 236px;
+	height: 114px;
+	top: 5px;
+	border-radius: 20px 20px 0px 0px;
+	display: block;
+	margin: auto;
 }
 
 .rating .fa-star {
-    color: #d9d9d9;
+	color: #d9d9d9;
 }
 
 .rating .obtained {
-    color: #0065FC;
+	color: #0065fc;
 }
-
 
 /* Footer part */
 
 footer {
-    background-color: #F2F2F2;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    padding-bottom: 50px;
+	background-color: #f2f2f2;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
 }
 
 .footer-link {
-    text-decoration-line: none;
-    color: #000;
+	text-decoration-line: none;
+	color: #000;
 }
 
 .container-links {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .container-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .container-links a {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
