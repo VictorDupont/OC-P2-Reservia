@@ -151,6 +151,7 @@ header p {
 	width: 236px;
 	height: 114px;
 	border-radius: 13px 13px 0 0;
+	object-fit: cover;
 }
 
 .marseille-accommodation .card .card-informations * {
