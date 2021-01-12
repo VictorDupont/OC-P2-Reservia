@@ -49,7 +49,44 @@ nav {
 	font-weight: 700;
 }
 
+/* Presentation  */
+
+header h1 {
+	font-size: 21px;
+}
+
+header p {
+	font-size: 16px;
+}
+
+/* Research */
+
+.research {
+	width: 420px;
+	height: 51px;
+	background: linear-gradient(to right, #f2f2f2, #fff);
+}
+
+.research input {
+	width: 234px;
+	height: 49px;
+	border: none;
+}
+
+.research button {
+	width: 134px;
+	height: 51px;
+	background-color: #0065fc;
+	color: white;
+	border-radius: 0 15px 15px 0;
+	border: none;
+}
+
 /* Filters */
+
+.filters h1 {
+	font-size: 14px;
+}
 
 .filter {
 	padding: 10px;
@@ -75,30 +112,77 @@ nav {
 	margin: 50px 0px 50px 0px;
 }
 
-/* Sections */
+/* Marseille accomodation */
 
-.container-accommodation {
-	display: flex;
-}
-
-.accommodation {
+.marseille-accommodation {
 	width: 880px;
 	height: 626px;
 	background-color: #efefef;
 	display: flex;
 	flex-flow: wrap;
 	margin: 0px;
+	border-radius: 17px;
 }
 
-.popular-accommodation {
-	width: 487px;
-	height: 626px;
+.marseille-accommodation .container {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.marseille-accommodation .title {
+	font-size: 21px;
+}
+
+.marseille-accommodation .more {
+	font-size: 18px;
+}
+
+.marseille-accommodation .cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.marseille-accommodation .card {
+	margin-right: 11px; /* 31px */
+}
+
+.marseille-accommodation .card img {
+	width: 236px;
+	height: 114px;
+	border-radius: 13px 13px 0 0;
+}
+
+.marseille-accommodation .card .card-informations * {
 	margin: 0px;
 }
 
-.container-accommodation {
-	display: flex;
-	flex-direction: row;
+.marseille-accommodation .card .card-informations {
+	margin-left: 16px;
+}
+
+.marseille-accommodation .card .card-informations h1 {
+	margin-top: 12px;
+	font-size: 16px;
+}
+
+.marseille-accommodation .card .card-informations p {
+	margin-top: 7px;
+	font-size: 14px;
+}
+
+.marseille-accommodation .card .card-informations .rating {
+	margin-top: 8px;
+	margin-bottom: 11px;
+	font-size: 12px;
+}
+
+/* Sections */
+
+.container-popular-accommodation {
+	width: 487px;
+	height: 626px;
+	margin: 0px;
 }
 
 .most-popular {
@@ -107,17 +191,9 @@ nav {
 
 /* Cards */
 
-.popular-accommodation .cards {
+.container-popular-accommodation .cards {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-content: center;
-	flex-wrap: wrap;
-}
-
-.accommodation .cards {
-	display: flex;
-	flex-direction: row;
 	justify-content: space-around;
 	align-content: center;
 	flex-wrap: wrap;
