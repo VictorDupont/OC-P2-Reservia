@@ -97,11 +97,24 @@ header p {
 	font-weight: 900;
 }
 
-.filter-icon {
-	padding: 10px;
+.container-filter {
+	width: 192px;
+	height: 46px;
+	border: 2px solid grey;
+	border-radius: 22px;
+}
+
+.container-icon {
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	background-color: #deebff;
-	color: #0065fc;
+	text-align: center;
+}
+
+.container-icon i {
+	line-height: 50px;
+	vertical-align: middle;
 }
 
 .accommodation-number {
