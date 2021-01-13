@@ -36,13 +36,17 @@ nav {
 	padding: 30px;
 }
 
-.active {
+.navbar-links li:hover {
 	border-top: 3px solid #0065fc;
 }
 
 .navbar-links li a {
 	color: #0065fc;
 	text-decoration-line: none;
+}
+
+.inactivate a {
+	color: #333 !important;
 }
 
 .navbar-links li .signup {
