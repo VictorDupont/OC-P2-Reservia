@@ -62,13 +62,31 @@ body {
 
 .navbar-links li:nth-child(3) a {
 	color: #0065FC !important;
-	font-weight: bold;
+	font-weight: 900;
 }
 
 .logo {
 	position: absolute;
 	left: 0;
 	bottom: 0;
+}
+
+
+
+
+
+.presentation {
+	margin-top: 50px;
+}
+
+.title {
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.subtitle {
+	font-size: 13px;
+	font-weight: 400;
 }
 
 /***
