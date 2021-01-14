@@ -89,6 +89,19 @@ body {
 	font-weight: 400;
 }
 
+
+
+.research {
+	margin-top: 8px;
+}
+
+.research a {
+	font-size: 13px;
+	font-weight: 900;
+	display: block;
+	padding: 18px 10px 18px 10px;
+}
+
 /***
 
 	HEADER
