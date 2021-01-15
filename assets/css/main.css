@@ -93,13 +93,44 @@ body {
 
 .research {
 	margin-top: 8px;
+	/*background-color: #F2F2F2;*/
+	display: inline-block;
+	display: flex;
+	flex-direction: row;
+}
+
+.research span {
+	width: 52px;
+	height: 58px;
+	border-radius: 15px 0px 0px 15px;
+	background-color: #F2F2F2;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.research input {
+	width: 234px;
+	height: 54px;
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	border-left: none;
+	border-right: none;
+	margin: 0;
+	padding-left: 17px;
+	font-weight: 900;
 }
 
 .research a {
-	font-size: 13px;
+	width: 100px;
+	font-size: 15px;
 	font-weight: 900;
-	display: block;
 	padding: 18px 10px 18px 10px;
+	border-radius: 0px 15px 15px 0px;
+	background-color: #0065FC;
+	color: #ffffff;
+	text-decoration: none;
+	text-align: center;
 }
 
 /***
