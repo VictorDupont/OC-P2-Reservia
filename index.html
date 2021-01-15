@@ -37,87 +37,60 @@
 				<input type="text" value="Marseille, France" />
 				<a role="button" href="#">Rechercher</a>
 			</div>
-		</div>
-		<!--
-			- Working on filters & research parts
-			- Resolve margin on Marseille part
-			Then:
-			- Add popular part
-			- Activites part
-			- Others resolves
-			
-		-->
-		<!--
-		<header>
-			<nav>
-				<img src="assets/images/logo/Reservia.svg" class="logo" alt="Reservia" />
-				<div class="navbar-links">
-					<li class="active"><a href="#accommodation">Hébergements</a></li>
-					<li class="inactivate"><a href="#activities">Activités</a></li>
-					<li><a href="#" class="signup">S'inscrire</a></li>
-				</div>
-			</nav>
 
-			<div class="container">
-				<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-				<p>En plein centre ville ou en pleine nature</p>
+			<div class="filters">
+				<span>Filtres</span>
 
-
-				<div class="research">
-						<i class="fas fa-map-marker-alt"></i>
-						<input type="search" value="Marseille, France" />
-						<button>Rechercher</button>
-				</div>
-
-
-				<div class="filters">
-					<h1>Filtres</h1>
-					<div class="btn-group">
-
-						<div class="container-filter">
-							<div class="container-icon">
-								<i class="fas fa-money-bill-wave filter-icon"></i>
-							</div> 
-							<a role="button" class="filter">
-								
-							Économique</a>
+				<div class="container-filter">
+					<a role="button" class="filter" href="#cheap">
+						<div class="container-icon">
+							<i class="fas fa-money-bill-wave filter-icon"></i>
 						</div>
-						
-
-						<a role="button" class="filter">
-							<div class="container-icon">
-								<i class="fas fa-child filter-icon"></i> 
-							</div>
-						Familial</a>
-
-						<a role="button" class="filter">
-							<div class="container-icon">
-								<i class="fas fa-heart filter-icon"></i> 
-							</div>
-						Romantique</a>
-
-						<a role="button" class="filter">
-							<div class="container-icon">
-								<i class="fas fa-dog filter-icon"></i> 
-							</div>
-						Animaux autorisés</a>
-					</div> 
+						Économique</a
+					>
 				</div>
 
-				<div class="informations">
-					<i class="fas fa-info-circle accommodation-number"></i> Plus de 500 logements
-					sont disponibles dans cette ville.
+				<div class="container-filter">
+					<a role="button" class="filter" href="#family">
+						<div class="container-icon">
+							<i class="fas fa-child filter-icon"></i>
+						</div>
+						Familial</a
+					>
+				</div>
+
+				<div class="container-filter">
+					<a role="button" class="filter" href="#love">
+						<div class="container-icon">
+							<i class="fas fa-heart filter-icon"></i>
+						</div>
+						Romantique</a
+					>
+				</div>
+
+				<div class="container-filter">
+					<a role="button" class="filter" href="#animals">
+						<div class="container-icon">
+							<i class="fas fa-dog filter-icon"></i>
+						</div>
+						Animaux autorisés</a
+					>
 				</div>
 			</div>
-		</header>
 
-		<div class="container">
-			<main>
-				<div id="container-accommodation">
-					<div class="marseille-accommodation" id="accommodation">
-						<div class="container">
-							<h1 class="title">Hébergement à Marseille</h1>
-						<div class="cards">
+			<div class="city-informations">
+				<div class="container-icon">
+					<i class="fas fa-info"></i>
+				</div>
+				<span>Plus de 500 logements sont disponibles dans cette ville</span>
+			</div>
+
+			<div class="container-accommodation">
+				<div class="marseille-accommodation">
+					<div class="marseille-container">
+						<h1>Hébergements à Marseille</h1>
+
+						<div class="cards-container">
 							<div class="card">
 								<img
 									src="assets/images/accommodation/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -226,16 +199,17 @@
 								</div>
 							</div>
 						</div>
-						<h2 class="more">Afficher plus</h2>
-						</div>
 					</div>
+				</div>
 
-					<div class="container-popular-accommodation">
+				<div class="popular-accommodation">
+					<div class="popular-container">
 						<h1>
 							Les plus populaires
 							<span class="most-popular"><i class="fas fa-chart-line"></i></span>
 						</h1>
-						<div class="cards">
+
+						<div class="cards-container">
 							<div class="card">
 								<img
 									src="assets/images/accommodation/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
@@ -292,6 +266,19 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		<!--
+			- Working on filters & research parts
+			- Resolve margin on Marseille part
+			Then:
+			- Add popular part
+			- Activites part
+			- Others resolves
+			
+		-->
+		<!--
+		
 			
 
 				<section id="activities">
