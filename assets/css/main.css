@@ -369,6 +369,10 @@ body {
 	margin-bottom: 60px;
 }
 
+.activities h1 {
+	font-size: 16px;
+}
+
 .container-activities {
 	display: flex;
 	justify-content: space-evenly;
@@ -431,6 +435,10 @@ footer {
 	padding-bottom: 50px;
 }
 
+.footer-part h1 {
+	font-size: 14px;
+}
+
 .footer-link {
 	text-decoration-line: none;
 	color: #000;
@@ -444,7 +452,7 @@ footer {
 .container-footer {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	margin: 0px 50px 0px 50px;
 }
 
 .container-links a {
