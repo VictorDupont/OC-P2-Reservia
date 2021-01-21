@@ -452,7 +452,19 @@ footer {
 .container-footer {
 	display: flex;
 	flex-direction: row;
-	margin: 0px 50px 0px 50px;
+	margin: 0 50px 0 50px;
+}
+
+.footer-part {
+	margin-top: 41px;
+}
+
+.footer-part.about {
+	margin-right: 220px;
+}
+
+.footer-part.our-accommodation {
+	margin-right: 285px;
 }
 
 .container-links a {
