@@ -279,9 +279,15 @@ body {
 .marseille-accommodation .card {
 	width: 246px;
 	height: 200px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	border-radius: 20px;
 	background-color: white;
+}
+
+.show-more {
+	font-size: 14px;
+	font-weight: 900;
+	margin-top: 11px;
 }
 
 .rating {
