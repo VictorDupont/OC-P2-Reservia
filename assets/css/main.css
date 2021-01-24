@@ -408,16 +408,25 @@ body {
 }
 
 .container-small-activities {
+	max-height: 445px;
 	display: flex;
 	flex-direction: column;
-	height: 445px;
 }
 
 .container-activities .card.small {
 	width: 302px;
-
 	border-radius: 16px;
 	box-shadow: 0 3px 2px -2px #d7d7d7;
+}
+
+.container-activities .card.small:nth-child(1) {
+	margin-bottom: 40px;
+}
+
+.container-activities .card.small:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .container-activities .card.small img {
