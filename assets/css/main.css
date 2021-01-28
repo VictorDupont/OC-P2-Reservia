@@ -10,12 +10,12 @@ Background: #F2F2F2
 
 body {
 	font-family: "Raleway";
-	margin: 0;
 	padding: 0;
 }
 
 .container {
-	margin: 0px 50px 0px 50px;
+	max-width: 1440px;
+	margin: auto;
 }
 
 /* HEADER */
@@ -218,7 +218,7 @@ body {
 
 .marseille-accommodation {
 	width: 880px;
-	height: 626px;
+	height: 626p;
 	border-radius: 18px;
 	background-color: #f2f2f2;
 	display: flex;
@@ -304,7 +304,7 @@ body {
 
 .popular-accommodation {
 	width: 420px;
-	height: 625px;
+	/*height: 625px;*/
 	margin-left: 40px;
 	border-radius: 18px;
 	background-color: #f2f2f2;
