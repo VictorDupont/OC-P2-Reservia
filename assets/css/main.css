@@ -11,11 +11,20 @@ Background: #F2F2F2
 body {
 	font-family: "Raleway";
 	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.super-container {
+	min-height: 100%;
+	position: relative;
 }
 
 .container {
 	max-width: 1440px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* HEADER */
@@ -130,6 +139,7 @@ body {
 	margin-top: 31px;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .filter {
@@ -206,6 +216,7 @@ body {
 
 .container-accommodation {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .container-accommodation {
@@ -232,11 +243,8 @@ body {
 
 .marseille-accommodation .cards-container {
 	display: flex;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-}
-
-.marseille-accommodation .card {
-	margin-right: 31px;
 }
 
 .marseille-accommodation .card:nth-child(3),
@@ -371,10 +379,6 @@ body {
 	font-size: 12px;
 }
 
-.activities {
-	margin-bottom: 60px;
-}
-
 .activities h1 {
 	font-size: 16px;
 }
@@ -382,7 +386,7 @@ body {
 .container-activities {
 	display: flex;
 	justify-content: space-evenly;
-	height: 445px;
+	flex-wrap: wrap;
 }
 
 .container-activities .card.giant {
@@ -408,8 +412,8 @@ body {
 }
 
 .container-small-activities {
-	max-height: 445px;
 	display: flex;
+	justify-content: space-evenly;
 	flex-direction: column;
 }
 
@@ -417,16 +421,6 @@ body {
 	width: 302px;
 	border-radius: 16px;
 	box-shadow: 0 3px 2px -2px #d7d7d7;
-}
-
-.container-activities .card.small:nth-child(1) {
-	margin-bottom: 40px;
-}
-
-.container-activities .card.small:nth-child(2) {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 }
 
 .container-activities .card.small img {
@@ -442,11 +436,10 @@ body {
 
 footer {
 	background-color: #f2f2f2;
-	position: relative;
+	margin-top: auto;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: auto;
 	padding-bottom: 50px;
 }
 
