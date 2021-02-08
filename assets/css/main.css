@@ -8,8 +8,36 @@ Background: #F2F2F2
 
 /* GENERAL */
 
+@media only screen and (max-width: 776px) {
+	.marseille-accommodation {
+		width: 100% !important;
+		margin: 50px;
+	}
+	.popular-accommodation {
+		width: 100% !important;
+		margin: 50px;
+	}
+}
+
+@media only screen and (max-width: 863px) {
+	.filters {
+		justify-content: center;
+	}
+
+	.filters:nth-last-child() {
+		margin-top: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 1224px) {
+	.special {
+		order: -1 !important;
+	}
+}
+
 body {
 	font-family: "Raleway";
+	margin: 0;
 	padding: 0;
 	height: 100%;
 	display: flex;
@@ -48,7 +76,8 @@ body {
 
 .navbar-links li {
 	display: inline-block;
-	padding: 46px 23px 10px 23px;
+	padding: 44px 23px 10px 23px;
+	border-top: 2px solid transparent;
 }
 
 .navbar-links li:hover {
@@ -142,6 +171,11 @@ body {
 	flex-wrap: wrap;
 }
 
+.filters h1 {
+	font-size: 14px;
+	margin: 15px;
+}
+
 .filter {
 	height: 46px;
 	border: 2px solid #d9d9d9;
@@ -228,7 +262,8 @@ body {
 }
 
 .marseille-accommodation {
-	width: 880px;
+	width: calc(100% - 420px - 40px);
+	min-width: 300px;
 	height: 626p;
 	border-radius: 18px;
 	background-color: #f2f2f2;
@@ -318,10 +353,6 @@ body {
 	background-color: #f2f2f2;
 }
 
-.popular-container {
-	margin: 46px 40px 34px 37px;
-}
-
 .popular-accommodation .most-popular {
 	font-size: 16px;
 	font-weight: 900;
@@ -339,6 +370,7 @@ body {
 .popular-accommodation .cards-container {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .popular-accommodation .card {
@@ -377,6 +409,10 @@ body {
 	position: absolute;
 	bottom: 14px;
 	font-size: 12px;
+}
+
+.popular-container {
+	margin: 40px;
 }
 
 .activities h1 {
