@@ -4,36 +4,11 @@
 Main blue : #0065FC
 Main blue (light) : #DEEBFF
 Background: #F2F2F2
+
+min 320px
 */
 
 /* GENERAL */
-
-@media only screen and (max-width: 776px) {
-	.marseille-accommodation {
-		width: 100% !important;
-		margin: 50px;
-	}
-	.popular-accommodation {
-		width: 100% !important;
-		margin: 50px;
-	}
-}
-
-@media only screen and (max-width: 863px) {
-	.filters {
-		justify-content: center;
-	}
-
-	.filters:nth-last-child() {
-		margin-top: 10px !important;
-	}
-}
-
-@media only screen and (max-width: 1224px) {
-	.special {
-		order: -1 !important;
-	}
-}
 
 body {
 	font-family: "Raleway";
@@ -57,6 +32,10 @@ body {
 
 /* HEADER */
 /** NAVBAR **/
+
+header {
+	display: flex;
+}
 
 .navbar {
 	width: 100%;
@@ -104,9 +83,7 @@ body {
 }
 
 .logo {
-	position: absolute;
-	left: 0;
-	bottom: 0;
+	margin: 50px 0 0 50px;
 }
 
 .presentation {
@@ -325,6 +302,7 @@ body {
 	margin-bottom: 30px;
 	border-radius: 20px;
 	background-color: white;
+	box-shadow: 0 3px 2px -2px #d7d7d7;
 }
 
 .show-more {
@@ -425,6 +403,10 @@ body {
 	flex-wrap: wrap;
 }
 
+.container-activities .card {
+	margin: 5px;
+}
+
 .container-activities .card.giant {
 	width: 302px;
 	height: 445px;
@@ -514,4 +496,116 @@ footer {
 
 .container-links a {
 	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 776px) {
+	.marseille-accommodation {
+		width: 100% !important;
+		background-color: #ffffff;
+		border-radius: 0px;
+		order: 2;
+	}
+	.popular-accommodation {
+		width: 100% !important;
+		background-color: #f2f2f2;
+		margin-left: 0px;
+		border-radius: 0px;
+		order: 1;
+	}
+}
+
+@media only screen and (max-width: 863px) {
+	.filters:nth-last-child() {
+		margin-top: 10px !important;
+	}
+}
+
+@media only screen and (max-width: 1224px) {
+	.special {
+		order: -1 !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		width: 100%;
+	}
+
+	.navbar-links li:nth-child(3) {
+		position: absolute;
+		top: -35px;
+		right: 30px;
+		padding: 0px;
+		border: none;
+	}
+
+	.navbar-links {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.navbar-links li:nth-child(1),
+	.navbar-links li:nth-child(2) {
+		display: flex;
+		width: 50%;
+		text-align: center;
+		border: none;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 2px solid #f2f2f2;
+	}
+
+	.navbar-links li:nth-child(1):hover,
+	.navbar-links li:nth-child(2):hover {
+		border-bottom: 2px solid #0065fc;
+	}
+
+	.presentation {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.title,
+	.subtitle {
+		width: 240px;
+		margin-left: 20px;
+	}
+
+	.research {
+		width: 330px;
+		margin-left: 20px;
+		margin-right: 30px;
+	}
+
+	.research .search-large-size {
+		display: none;
+	}
+
+	.search-mobile {
+		width: 50px;
+		border-radius: 15px !important;
+	}
+
+	.activities h1 {
+		margin-left: 20px;
+	}
+
+	.city-informations {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	.search-mobile {
+		display: none;
+	}
 }
