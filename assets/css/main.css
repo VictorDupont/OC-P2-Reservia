@@ -26,8 +26,8 @@ body {
 
 .container {
 	max-width: 1440px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 /* HEADER */
@@ -83,7 +83,7 @@ header {
 }
 
 .logo {
-	margin: 50px 0 0 50px;
+	margin: 50px 0 0 0;
 }
 
 .presentation {
@@ -91,12 +91,12 @@ header {
 }
 
 .title {
-	font-size: 16px;
+	font-size: 21px;
 	font-weight: 900;
 }
 
 .subtitle {
-	font-size: 13px;
+	font-size: 16px;
 	font-weight: 400;
 }
 
@@ -200,8 +200,8 @@ header {
 }
 
 .city-informations {
-	margin-top: 54px;
-	font-size: 12px;
+	margin-top: 40px;
+	font-size: 16px;
 	display: flex;
 }
 
@@ -228,40 +228,32 @@ header {
 .container-accommodation {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-.container-accommodation {
-	margin-top: 36px;
+	margin-top: 40px;
 }
 
 .marseille-container {
-	margin: 40px;
+	margin: 45px 40px 45px 40px;
 }
 
 .marseille-accommodation {
 	width: calc(100% - 420px - 40px);
 	min-width: 300px;
-	height: 626p;
 	border-radius: 18px;
 	background-color: #f2f2f2;
 	display: flex;
 }
 
 .marseille-accommodation h1 {
-	font-size: 16px;
+	font-size: 21px;
 	font-weight: 900;
-	margin-bottom: 28px;
+	margin-bottom: 23px;
+	margin-top: 0px;
 }
 
 .marseille-accommodation .cards-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-.marseille-accommodation .card:nth-child(3),
-.marseille-accommodation .card:nth-child(6) {
-	margin-right: 0px;
 }
 
 .marseille-accommodation .card img {
@@ -281,13 +273,12 @@ header {
 }
 
 .marseille-accommodation .card .card-informations h1 {
-	margin-top: 12px;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .marseille-accommodation .card .card-informations p {
 	margin-top: 7px;
-	font-size: 10px;
+	font-size: 13px;
 }
 
 .marseille-accommodation .card .card-informations .rating {
@@ -306,7 +297,7 @@ header {
 }
 
 .show-more {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 900;
 	margin-top: 11px;
 }
@@ -332,9 +323,10 @@ header {
 }
 
 .popular-accommodation .most-popular {
-	font-size: 16px;
+	font-size: 21px;
 	font-weight: 900;
-	margin-bottom: 31px;
+	margin-bottom: 45px;
+	margin-bottom: 25px;
 	display: flex;
 }
 
@@ -342,7 +334,7 @@ header {
 	align-items: flex-end;
 	margin-left: auto;
 	order: 2;
-	font-size: 18px;
+	font-size: 21px;
 }
 
 .popular-accommodation .cards-container {
@@ -376,11 +368,12 @@ header {
 }
 
 .popular-accommodation .card-informations h1 {
-	font-size: 12px;
+	font-size: 16px;
+	margin: 0;
 }
 
 .popular-accommodation .card-informations p {
-	font-size: 10px;
+	font-size: 13px;
 }
 
 .popular-accommodation .rating {
@@ -390,21 +383,20 @@ header {
 }
 
 .popular-container {
-	margin: 40px;
+	margin: 45px 40px 45px 40px;
 }
 
-.activities h1 {
-	font-size: 16px;
+.activities-title {
+	font-size: 17px;
+	margin-top: 60px;
+	margin-bottom: 25px;
 }
 
 .container-activities {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
-}
-
-.container-activities .card {
-	margin: 5px;
+	margin-bottom: 40px;
 }
 
 .container-activities .card.giant {
@@ -422,16 +414,20 @@ header {
 	object-fit: cover;
 }
 
+.container-activities .card {
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
 .container-activities .card .card-informations {
 	font-size: 12px;
 	font-weight: 900;
-	margin-left: 19px;
-	margin-top: 23px;
+	margin: 18px 0 23px 20px;
 }
 
 .container-small-activities {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-direction: column;
 }
 
@@ -449,7 +445,8 @@ header {
 }
 
 .container-activities .card h1 {
-	font-size: 12px;
+	font-size: 13px;
+	margin: 0;
 }
 
 footer {
@@ -480,18 +477,11 @@ footer {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0 50px 0 50px;
+	justify-content: space-between;
 }
 
 .footer-part {
 	margin-top: 41px;
-}
-
-.footer-part.about {
-	margin-right: 220px;
-}
-
-.footer-part.our-accommodation {
-	margin-right: 285px;
 }
 
 .container-links a {
@@ -512,6 +502,26 @@ footer {
 		border-radius: 0px;
 		order: 1;
 	}
+	#global {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.activities-title {
+		margin-left: 20px;
+	}
+}
+
+@media only screen and (max-width: 948px) {
+	.filters h1 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 875px) {
+	.filter {
+		margin-right: 12px;
+		margin-bottom: 12px;
+	}
 }
 
 @media only screen and (max-width: 863px) {
@@ -520,12 +530,42 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 1224px) {
-	.special {
-		order: -1 !important;
+@media only screen and (max-width: 827px) {
+	.title,
+	.subtitle,
+	.filters h1 {
+		margin-left: 0px;
 	}
 }
 
+@media only screen and (max-width: 777px) {
+	.pres {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (min-width: 775px) and (max-width: 900px) {
+	.marseille-accommodation {
+		width: 100% !important;
+		background-color: #ffffff;
+		border-radius: 0px;
+		order: 2;
+	}
+	.popular-accommodation {
+		width: 100% !important;
+		background-color: #f2f2f2;
+		margin-left: 0px;
+		border-radius: 0px;
+		order: 1;
+	}
+}
+
+@media only screen and (max-width: 643px) {
+	.container-activities {
+		justify-content: center;
+	}
+}
 @media only screen and (max-width: 600px) {
 	header {
 		display: flex;
@@ -577,13 +617,10 @@ footer {
 	.title,
 	.subtitle {
 		width: 240px;
-		margin-left: 20px;
 	}
 
 	.research {
 		width: 330px;
-		margin-left: 20px;
-		margin-right: 30px;
 	}
 
 	.research .search-large-size {
@@ -598,14 +635,22 @@ footer {
 	.activities h1 {
 		margin-left: 20px;
 	}
-
-	.city-informations {
-		margin-left: 20px;
-	}
 }
 
 @media only screen and (min-width: 600px) {
 	.search-mobile {
 		display: none;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.marseille-container .cards-container {
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.popular-accommodation .card {
+		width: auto;
 	}
 }
