@@ -257,7 +257,7 @@ header {
 }
 
 .marseille-accommodation .card img {
-	width: 236px;
+	width: calc(100% - 10px);
 	height: 114px;
 	border-radius: 13px 13px 0 0;
 	margin: 5px;
@@ -294,6 +294,8 @@ header {
 	border-radius: 20px;
 	background-color: white;
 	box-shadow: 0 3px 2px -2px #d7d7d7;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
 .show-more {
@@ -473,19 +475,27 @@ footer {
 }
 
 .container-footer {
+	max-width: 1440px;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	margin: 0 50px 0 50px;
-	justify-content: space-between;
+	padding-top: 50px;
+	justify-content: start;
 }
 
 .footer-part {
-	margin-top: 41px;
+	width: max-content;
+	margin-right: calc(100% / 3 - 230px);
 }
 
 .container-links a {
 	margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1437px) {
+	.marseille-container .card {
+		flex-grow: 1;
+	}
 }
 
 @media only screen and (max-width: 776px) {
@@ -517,10 +527,22 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	.marseille-container .card {
+		flex-grow: 1;
+	}
+}
+
 @media only screen and (max-width: 875px) {
 	.filter {
 		margin-right: 12px;
 		margin-bottom: 12px;
+	}
+	.container-footer {
+		flex-direction: column;
+	}
+	.footer-part {
+		margin-bottom: 20px;
 	}
 }
 
@@ -543,6 +565,10 @@ footer {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+	.logo {
+		margin-left: 20px;
+		margin-top: 30px;
+	}
 }
 
 @media only screen and (min-width: 775px) and (max-width: 900px) {
@@ -564,6 +590,12 @@ footer {
 @media only screen and (max-width: 643px) {
 	.container-activities {
 		justify-content: center;
+	}
+	.container-activities .card.giant {
+		height: auto;
+	}
+	.container-activities .card.giant img {
+		height: 150px;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -616,15 +648,21 @@ footer {
 
 	.title,
 	.subtitle {
-		width: 240px;
+		width: 295px;
 	}
 
 	.research {
-		width: 330px;
+		width: calc(100% - 40px);
 	}
 
 	.research .search-large-size {
 		display: none;
+	}
+
+	.research a {
+		width: 17px;
+		height: 17px;
+		padding: 16px;
 	}
 
 	.search-mobile {
