@@ -492,9 +492,31 @@ footer {
 	margin-bottom: 10px;
 }
 
+@media only screen and (min-width: 1440px) {
+	.container,
+	.container-footer {
+		margin: auto;
+	}
+}
+
 @media only screen and (min-width: 901px) and (max-width: 1437px) {
 	.marseille-container .card {
 		flex-grow: 1;
+	}
+}
+
+@media only screen and (min-width: 1066px) and (max-width: 1387px) {
+	.container-activities .card {
+		flex-grow: 1;
+	}
+	.container-activities .card.giant img {
+		width: 100%;
+	}
+	.container-activities .card.giant {
+		flex-grow: 2;
+	}
+	.container-activities .special {
+		order: 100;
 	}
 }
 
@@ -587,6 +609,15 @@ footer {
 	}
 }
 
+@media only screen and (min-width: 645px) and (max-width: 1065px) {
+	.container-activities .card {
+		flex-grow: 1;
+	}
+	.container-activities .card.giant img {
+		width: 100%;
+	}
+}
+
 @media only screen and (max-width: 643px) {
 	.container-activities {
 		justify-content: center;
@@ -652,7 +683,7 @@ footer {
 	}
 
 	.research {
-		width: calc(100% - 40px);
+		width: 100%;
 	}
 
 	.research .search-large-size {
@@ -690,5 +721,24 @@ footer {
 @media only screen and (max-width: 350px) {
 	.popular-accommodation .card {
 		width: auto;
+	}
+
+	.container-activities {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.container-activities .card.small,
+	.container-activities .card.giant {
+		width: auto;
+	}
+
+	.container-activities .card.small img,
+	.container-activities .card.giant img {
+		width: 100%;
+	}
+
+	.research span i {
+		padding: 10px;
 	}
 }
