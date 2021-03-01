@@ -417,8 +417,8 @@ header {
 }
 
 .container-activities .card {
-	margin: 10px;
-	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .container-activities .card .card-informations {
@@ -431,6 +431,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
+	height: 445px;
 }
 
 .container-activities .card.small {
