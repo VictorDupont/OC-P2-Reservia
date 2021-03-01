@@ -164,10 +164,6 @@ header {
 	margin-right: 24px;
 }
 
-.filter:nth-last-child() {
-	margin-right: 0px;
-}
-
 .filter:hover {
 	margin-top: -2px;
 	transition: all 200ms;
@@ -566,12 +562,6 @@ footer {
 	}
 	.footer-part {
 		margin-bottom: 20px;
-	}
-}
-
-@media only screen and (max-width: 863px) {
-	.filters:nth-last-child() {
-		margin-top: 10px !important;
 	}
 }
 
