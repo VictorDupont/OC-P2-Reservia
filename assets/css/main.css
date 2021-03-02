@@ -19,11 +19,6 @@ body {
 	flex-direction: column;
 }
 
-.super-container {
-	min-height: 100%;
-	position: relative;
-}
-
 .container {
 	max-width: 1440px;
 	margin-left: 50px;
@@ -44,7 +39,8 @@ header {
 }
 
 .navbar-links {
-	float: right;
+	display: flex;
+	justify-content: flex-end;
 }
 
 .navbar-links {
@@ -100,6 +96,12 @@ header {
 	font-weight: 400;
 }
 
+.title,
+.subtitle,
+.filters h1 {
+	margin-left: 0px;
+}
+
 .research {
 	margin-top: 8px;
 	/*background-color: #F2F2F2;*/
@@ -150,7 +152,7 @@ header {
 
 .filters h1 {
 	font-size: 14px;
-	margin: 15px;
+	margin: 15px 15px 15px 0px;
 }
 
 .filter {
@@ -489,9 +491,10 @@ footer {
 	margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1441px) {
 	.container,
 	.container-footer {
+		padding: 0 50px;
 		margin: auto;
 	}
 }
@@ -499,6 +502,12 @@ footer {
 @media only screen and (min-width: 901px) and (max-width: 1437px) {
 	.marseille-container .card {
 		flex-grow: 1;
+	}
+}
+
+@media only screen and (max-width: 1387px) {
+	.container-activities .card {
+		margin-bottom: 20px;
 	}
 }
 
@@ -565,15 +574,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width: 827px) {
-	.title,
-	.subtitle,
-	.filters h1 {
-		margin-left: 0px;
-	}
-}
-
-@media only screen and (max-width: 777px) {
+@media only screen and (max-width: 776px) {
 	.pres {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -697,7 +698,7 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
 	.search-mobile {
 		display: none;
 	}
