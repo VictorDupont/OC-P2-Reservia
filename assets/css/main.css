@@ -98,7 +98,7 @@ header {
 
 .title,
 .subtitle,
-.filters h1 {
+.filters h3 {
 	margin-left: 0px;
 }
 
@@ -129,6 +129,7 @@ header {
 	margin: 0;
 	padding-left: 17px;
 	font-weight: 900;
+	font-size: 14px;
 }
 
 .research a {
@@ -150,7 +151,7 @@ header {
 	flex-wrap: wrap;
 }
 
-.filters h1 {
+.filters h3 {
 	font-size: 14px;
 	margin: 15px 15px 15px 0px;
 }
@@ -241,7 +242,7 @@ header {
 	display: flex;
 }
 
-.marseille-accommodation h1 {
+.marseille-accommodation h3 {
 	font-size: 21px;
 	font-weight: 900;
 	margin-bottom: 23px;
@@ -270,7 +271,7 @@ header {
 	margin-left: 16px;
 }
 
-.marseille-accommodation .card .card-informations h1 {
+.marseille-accommodation .card .card-informations h4 {
 	font-size: 16px;
 }
 
@@ -367,7 +368,7 @@ header {
 	position: relative;
 }
 
-.popular-accommodation .card-informations h1 {
+.popular-accommodation .card-informations h4 {
 	font-size: 16px;
 	margin: 0;
 }
@@ -445,7 +446,7 @@ header {
 	object-fit: cover;
 }
 
-.container-activities .card h1 {
+.container-activities .card h4 {
 	font-size: 13px;
 	margin: 0;
 }
@@ -459,7 +460,7 @@ footer {
 	padding-bottom: 50px;
 }
 
-.footer-part h1 {
+.footer-part h3 {
 	font-size: 14px;
 }
 
@@ -507,7 +508,7 @@ footer {
 
 @media only screen and (max-width: 1387px) {
 	.container-activities .card {
-		margin-bottom: 20px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -550,7 +551,7 @@ footer {
 }
 
 @media only screen and (max-width: 948px) {
-	.filters h1 {
+	.filters h3 {
 		width: 100%;
 	}
 }
@@ -676,6 +677,19 @@ footer {
 
 	.research {
 		width: 100%;
+		height: 54px;
+	}
+
+	.research span {
+		height: 54px;
+	}
+
+	.research span i {
+		font-size: 18px;
+	}
+
+	.research input {
+		height: 50px;
 	}
 
 	.research .search-large-size {
@@ -683,9 +697,16 @@ footer {
 	}
 
 	.research a {
+		display: flex;
 		width: 17px;
-		height: 17px;
 		padding: 16px;
+		align-items: center;
+		position: relative;
+		left: -9px;
+	}
+
+	.research a i {
+		font-size: 17px;
 	}
 
 	.search-mobile {
@@ -693,7 +714,7 @@ footer {
 		border-radius: 15px !important;
 	}
 
-	.activities h1 {
+	.activities h3 {
 		margin-left: 20px;
 	}
 }
