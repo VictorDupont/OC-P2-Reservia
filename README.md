@@ -1,4 +1,3 @@
 # Réservia : Trouvez votre hébergement de rêve !
 
-![image](https://user-images.githubusercontent.com/76693227/148557310-249360a7-7597-4df6-8a1f-6d12cf929ae5.png)
-
+![reservia](https://user-images.githubusercontent.com/76693227/150074584-9060d44a-3c89-43ed-be47-c10927bbfae5.png)
