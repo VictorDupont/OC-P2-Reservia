@@ -1,4 +1,4 @@
-# Réservia : Trouvez votre hébergement de rêve !
+# Reservia : Find your dream accomodation!
 
 - Model integration
 - Realization of CSS effects
